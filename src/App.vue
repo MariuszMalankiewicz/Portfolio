@@ -1,8 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
 </script>
 
 <template>
+    <main>
+        <Nav></Nav>
+    </main>
 </template>
 
 <style scoped>
