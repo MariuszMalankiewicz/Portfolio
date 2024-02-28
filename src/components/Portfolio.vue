@@ -1,5 +1,5 @@
 <template>
-    <section class="min-w-[320px] font-Montserrat">
+    <section id="portfolio" class="min-w-[320px] font-Montserrat">
         <img src="../assets/images/wave_up.svg" alt="wave up">
         <div class="bg-blue text-white pb-6">
             <h1 id="portfolio" class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center font-bold pt-8">Portfolio</h1>
