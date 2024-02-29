@@ -17,15 +17,15 @@ const showToogle = ()=>{
         <ByClose class="md:hidden fixed top-5 right-5 z-10 text-xl cursor-pointer" v-if="show" @click="showToogle()"></ByClose>
         <!-- Nav belowe 768px -->
         <div class="fixed md:hidden h-screen  top-0 left-0 flex flex-col justify-around items-center w-full bg-white font-semibold font-Montserrat" v-if="show">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">About</a>
+            <a href="#projects" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">Projects</a>
+            <a href="#contact" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">Contact</a>
         </div>
         <!-- Nav above 768px -->
         <div class="hidden md:block space-x-5 lg:space-x-10 xl:space-x-16 font-semibold font-Montserrat">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">About</a>
+            <a href="#projects" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">Projects</a>
+            <a href="#contact" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">Contact</a>
         
         </div>
     </nav>
