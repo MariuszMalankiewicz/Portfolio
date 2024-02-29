@@ -2,7 +2,7 @@
     <section id="portfolio" class="min-w-[320px] font-Montserrat">
         <img src="../assets/images/wave_up.svg" alt="wave up">
         <div class="bg-blue text-white pb-6">
-            <h1 id="portfolio" class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center font-bold pt-8">Portfolio</h1>
+            <h1 class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center font-bold pt-8">Portfolio</h1>
             <nav class="flex justify-center items-center space-x-4 py-8">
                 <a href="#" class="hover:underline hover:font-semibold transition-all duration-150 ease-in-out">All</a>
                 <a href="#" class="hover:underline hover:font-semibold transition-all duration-150 ease-in-out">Web design</a>
