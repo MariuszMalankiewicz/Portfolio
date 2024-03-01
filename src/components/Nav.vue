@@ -26,7 +26,6 @@ const showToogle = ()=>{
             <a href="#about" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">About</a>
             <a href="#projects" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">Projects</a>
             <a href="#contact" class="hover:underline hover:font-bold transition-all duration-150 ease-in-out">Contact</a>
-        
         </div>
     </nav>
 </template>
