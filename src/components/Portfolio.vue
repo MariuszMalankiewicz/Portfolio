@@ -20,7 +20,7 @@
                 <hr class="w-full h-1 text-light-gray mt-6">
                 <div class="flex flex-nowrap items-center pt-3 pb-6">
                     <a href="https://mariuszmalankiewicz.netlify.app/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
-                    <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a>
+                    <a href="https://dribbble.com/shots/23744671-Portfolio-web-design?utm_source=Clipboard_Shot&utm_campaign=mariusz_malankiewicz&utm_content=Portfolio%20web%20design&utm_medium=Social_Share" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a>
                     <a href="https://github.com/MariuszMalankiewicz/Portfolio" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
                 </div>
 
