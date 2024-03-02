@@ -6,7 +6,6 @@
 * [Setup](#setup)
 
 ## General info
-Wprowadzenie – cel projektu
 Personal portfolio contain information about me, projects and contact.
 	
 ## Technologies
