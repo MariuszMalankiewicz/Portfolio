@@ -23,7 +23,7 @@ import 'swiper/css';
                   <hr class="w-full h-1 text-light-gray mt-6">
                   <div class="flex flex-nowrap items-center pt-3 pb-6">
                       <a href="http://mmblog.c1.is/public/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
-                      <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a>
+                      <!-- <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a> -->
                       <a href="https://github.com/MariuszMalankiewicz/MMBlog" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
                   </div>
                 </div>
@@ -40,8 +40,79 @@ import 'swiper/css';
                   <hr class="w-full h-1 text-light-gray mt-6">
                   <div class="flex flex-nowrap items-center pt-3 pb-6">
                       <a href="https://mariuszmalankiewicz.netlify.app/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
-                      <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a>
+                      <!-- <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a> -->
                       <a href="https://github.com/MariuszMalankiewicz/Portfolio" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                  <img src="/src/assets/images/tree_structure.png" alt="portfolio images" class="rounded-t-xl">
+                  <h1 class="font-bold text-xl ps-2 pt-4">Tree Structure</h1>
+                  <div class="w-full flex flex-wrap pt-3 text-sm">
+                    <p class="mx-2 mt-2 px-1 py-[1px] bg-light-gray rounded-md">Laravel</p>
+                    <p class="mt-2 px-1 py-[1px] bg-light-gray rounded-md">Bootstrap</p>
+                </div>
+                  <hr class="w-full h-1 text-light-gray mt-6">
+                  <div class="flex flex-nowrap items-center pt-3 pb-6">
+                      <a href="https://hosting2367263.online.pro/public/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
+                      <!-- <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a> -->
+                      <a href="https://github.com/MariuszMalankiewicz/Tree-Structure" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                  <img src="/src/assets/images/Memory_Game.png" alt="portfolio images" class="rounded-t-xl">
+                  <h1 class="font-bold text-xl ps-2 pt-4">Memory Game</h1>
+                  <div class="w-full flex flex-wrap pt-3 text-sm">
+                    <p class="mx-2 mt-2 px-1 py-[1px] bg-light-gray rounded-md">HTML</p>
+                    <p class="mt-2 px-1 py-[1px] bg-light-gray rounded-md">CSS</p>
+                    <p class="mt-2 mx-2 px-1 py-[1px] bg-light-gray rounded-md">Java Script</p>
+                </div>
+                  <hr class="w-full h-1 text-light-gray mt-6">
+                  <div class="flex flex-nowrap items-center pt-3 pb-6">
+                      <a href="https://mariuszmalankiewicz.github.io/Memory-Game/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
+                      <!-- <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a> -->
+                      <a href="https://github.com/MariuszMalankiewicz/Memory-Game" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                  <img src="/src/assets/images/Todo_list.png" alt="portfolio images" class="rounded-t-xl">
+                  <h1 class="font-bold text-xl ps-2 pt-4">Todo List</h1>
+                  <div class="w-full flex flex-wrap pt-3 text-sm">
+                    <p class="mx-2 mt-2 px-1 py-[1px] bg-light-gray rounded-md">HTML</p>
+                    <p class="mt-2 px-1 py-[1px] bg-light-gray rounded-md">CSS</p>
+                    <p class="mt-2 mx-2 px-1 py-[1px] bg-light-gray rounded-md">Java Script</p>
+                </div>
+                  <hr class="w-full h-1 text-light-gray mt-6">
+                  <div class="flex flex-nowrap items-center pt-3 pb-6">
+                      <a href="https://mariuszmalankiewicz.github.io/To-Do-List/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
+                      <!-- <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a> -->
+                      <a href="https://github.com/MariuszMalankiewicz/To-Do-List" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                  <img src="/src/assets/images/Rock_scissors_paper.png" alt="portfolio images" class="rounded-t-xl">
+                  <h1 class="font-bold text-xl ps-2 pt-4">Rock Scissors Paper</h1>
+                  <div class="w-full flex flex-wrap pt-3 text-sm">
+                    <p class="mx-2 mt-2 px-1 py-[1px] bg-light-gray rounded-md">HTML</p>
+                    <p class="mt-2 px-1 py-[1px] bg-light-gray rounded-md">CSS</p>
+                    <p class="mt-2 mx-2 px-1 py-[1px] bg-light-gray rounded-md">Java Script</p>
+                </div>
+                  <hr class="w-full h-1 text-light-gray mt-6">
+                  <div class="flex flex-nowrap items-center pt-3 pb-6">
+                      <a href="https://mariuszmalankiewicz.github.io/Rock-scissors-paper/" target="blank" class="mx-2 mt-2 px-2 py-1 bg-blue hover:bg-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Website</a>
+                      <!-- <a href="#" target="blank" class="mx-2 mt-2 px-2 py-1 bg-light-blue hover:bg-light-blue/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Web design</a> -->
+                      <a href="https://github.com/MariuszMalankiewicz/Rock-scissors-paper" target="blank" class="mx-2 mt-2 px-2 py-1 bg-dark-gray hover:bg-dark-gray/90 hover:font-semibold text-white rounded-md transition-all duration-150 ease-in-out">Github</a>
                   </div>
                 </div>
               </SwiperSlide>
