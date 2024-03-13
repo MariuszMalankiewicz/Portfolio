@@ -13,7 +13,7 @@ import 'swiper/css';
             <h1 class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center font-bold py-8">Projects</h1>
             <Swiper :modules="[Navigation]" navigation class="md:w-2/3 lg:w-1/2"> 
               <SwiperSlide>
-                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                <div class="bg-white w-[320px] lg:w-[400px] rounded-xl text-black shadow-xl mx-auto mb-6 mt-6">
                   <img src="/src/assets/images/mmblog.png" alt="portfolio images" class="rounded-t-xl">
                   <h1 class="font-bold text-xl ps-2 pt-4">MMblog</h1>
                   <div class="w-full flex flex-wrap pt-3 text-sm">
@@ -30,7 +30,7 @@ import 'swiper/css';
               </SwiperSlide>
 
               <SwiperSlide>
-                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                <div class="bg-white w-[320px] lg:w-[400px] rounded-xl text-black shadow-xl mx-auto mb-6">
                   <img src="/src/assets/images/portfolio.png" alt="portfolio images" class="rounded-t-xl">
                   <h1 class="font-bold text-xl ps-2 pt-4">Portfolio</h1>
                   <div class="w-full flex flex-wrap pt-3 text-sm">
@@ -47,7 +47,7 @@ import 'swiper/css';
               </SwiperSlide>
 
               <SwiperSlide>
-                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                <div class="bg-white w-[320px] lg:w-[400px] rounded-xl text-black shadow-xl mx-auto mb-6">
                   <img src="/src/assets/images/tree_structure.png" alt="portfolio images" class="rounded-t-xl">
                   <h1 class="font-bold text-xl ps-2 pt-4">Tree Structure</h1>
                   <div class="w-full flex flex-wrap pt-3 text-sm">
@@ -64,7 +64,7 @@ import 'swiper/css';
               </SwiperSlide>
 
               <SwiperSlide>
-                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                <div class="bg-white w-[320px] lg:w-[400px] rounded-xl text-black shadow-xl mx-auto mb-6">
                   <img src="/src/assets/images/Memory_Game.png" alt="portfolio images" class="rounded-t-xl">
                   <h1 class="font-bold text-xl ps-2 pt-4">Memory Game</h1>
                   <div class="w-full flex flex-wrap pt-3 text-sm">
@@ -82,7 +82,7 @@ import 'swiper/css';
               </SwiperSlide>
 
               <SwiperSlide>
-                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                <div class="bg-white w-[320px] lg:w-[400px] rounded-xl text-black shadow-xl mx-auto mb-6">
                   <img src="/src/assets/images/Todo_list.png" alt="portfolio images" class="rounded-t-xl">
                   <h1 class="font-bold text-xl ps-2 pt-4">Todo List</h1>
                   <div class="w-full flex flex-wrap pt-3 text-sm">
@@ -100,7 +100,7 @@ import 'swiper/css';
               </SwiperSlide>
 
               <SwiperSlide>
-                <div class="bg-white w-[320px] rounded-xl text-black shadow-xl mx-auto mb-6">
+                <div class="bg-white w-[320px] lg:w-[400px] rounded-xl text-black shadow-xl mx-auto mb-6">
                   <img src="/src/assets/images/Rock_scissors_paper.png" alt="portfolio images" class="rounded-t-xl">
                   <h1 class="font-bold text-xl ps-2 pt-4">Rock Scissors Paper</h1>
                   <div class="w-full flex flex-wrap pt-3 text-sm">
