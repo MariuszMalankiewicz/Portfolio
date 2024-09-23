@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="min-w-[320px] font-Montserrat flex flex-col items-center pb-10">
+    <section class="min-w-[320px] font-Montserrat flex flex-col items-center pb-10">
         <h1 class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center text-blue font-bold pt-10 sm:pt-12 pb-6 sm:pb-10 md:pb-12">Contact</h1>
         <div class="w-full flex flex-col justify-center items-center md:flex-row md:space-x-10 lg:space-x-20 xl:space-x-28 2xl:space-x-36">
             <img src="../assets/images/Contact us-rafiki.png" class="max-w-[250px] sm:max-w-[320px] md:max-w-[300px] lg:max-w-[340px] xl:max-w-[380px] 2xl:max-w-[420px]" alt="Contact us-rafiki.png">

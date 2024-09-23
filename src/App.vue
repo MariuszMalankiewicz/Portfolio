@@ -1,12 +1,29 @@
+<script setup>
+import { ref, computed } from 'vue';
+import Navigation from '/src/components/layout/Navigation.vue'
+
+const isExpand = ref(false);
+
+const handleExpandUpdate = () => {
+  isExpand.value = !isExpand.value;
+};
+
+const dynamicWidth = computed(() => {
+  return isExpand.value ? 'w-[150px] transition-all duration-300 ease-in-out' : 'w-[50px] duration-300 ease-in-out';
+});
+
+const dynamicMargin = computed(() => {
+  return isExpand.value ? 'ml-[170px] transition-all duration-300 ease-in-out' : 'ml-[70px] duration-300 ease-in-out';
+});
+
+</script>
+
 <template>
-    <div id="app">
-      <nav class="flex gap-x-4 m-4">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/tech-stack">Tech-Stack</router-link>
-      <router-link to="/portfolio">Portfolio</router-link>
-      <router-link to="/contact">Contact</router-link>
-    </nav>
-    <router-view></router-view>
+    <div id="app" class="flex">
+      <Navigation @ChangeExpand="handleExpandUpdate" :class="dynamicWidth" class="md:w-[300px]"></Navigation>
+      <main :class="dynamicMargin" class="w-full md:ml-[320px] flex items-center justify-center">
+        <router-view></router-view>
+      </main>
     </div>
 </template>
+

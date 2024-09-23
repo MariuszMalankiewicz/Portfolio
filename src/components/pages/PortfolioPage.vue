@@ -7,7 +7,7 @@ import 'swiper/css';
 
 </script>
 <template>
-    <section id="projects" class="min-w-[320px] font-Montserrat">
+    <section class="min-w-[320px] font-Montserrat">
         <img src="../assets/images/wave_up.svg" alt="wave up">
         <div class="bg-blue text-white pb-6">
             <h1 class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center font-bold py-8">Projects</h1>
