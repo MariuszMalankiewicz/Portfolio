@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import Navigation from '/src/components/layout/Navigation.vue'
+import Footer from '/src/components/layout/Footer.vue'
 
 const isExpand = ref(false);
 
@@ -13,7 +14,7 @@ const dynamicWidth = computed(() => {
 });
 
 const dynamicMargin = computed(() => {
-  return isExpand.value ? 'ml-[170px] transition-all duration-300 ease-in-out' : 'ml-[70px] duration-300 ease-in-out';
+  return isExpand.value ? 'ml-[150px] transition-all duration-300 ease-in-out' : 'ml-[50px] duration-300 ease-in-out';
 });
 
 </script>
@@ -21,8 +22,9 @@ const dynamicMargin = computed(() => {
 <template>
     <div id="app" class="flex">
       <Navigation @ChangeExpand="handleExpandUpdate" :class="dynamicWidth" class="md:w-[300px]"></Navigation>
-      <main :class="dynamicMargin" class="w-full md:ml-[320px] flex items-center justify-center">
+      <main :class="dynamicMargin" class="w-full md:ml-[300px] flex flex-col items-center justify-center">
         <router-view></router-view>
+        <Footer></Footer>
       </main>
     </div>
 </template>
