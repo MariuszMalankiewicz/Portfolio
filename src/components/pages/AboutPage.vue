@@ -1,15 +1,15 @@
 <script setup>
-import HandCoding from '/src/assets/images/hand-coding.png'
+import DeveloperActivity from '/src/assets/images/developer-activity.png'
 </script>
 
 <template>
-    <section class="w-full px-5 pt-32 sm:pt-36 md:pt-40 lg:pt-44 xl:pt-48 2xl:pt-52 mb-16 font-Montserrat">
-        <h1 class="text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[40px] text-center font-bold text-blue">About</h1>
-        <div class="flex flex-col md:flex-row md:justify-center items-center md:space-x-16 lg:space-x-32 2xl:space-x-64 mt-16">
-            <img :src="HandCoding" class="max-w-[250px] sm:max-w-[320px] md:max-w-[300px] lg:max-w-[340px] xl:max-w-[380px]" alt="work in progress">
-            <div class="max-w-[600px] text-[16px]">
-                <p>Hi, i'm Malankiewicz</p>
-                <p>and I am a web developer with a passion for creating functional, modern, and aesthetically pleasing websites and web applications. I have experience working with front-end technologies such as HTML5, CSS3, Tailwind, Bootstrap, JavaScript, Vue.js, as well as back-end technologies like PHP and Laravel, and databases such as MySQL and SQLite. In my daily work, I follow principles of responsiveness, performance, and clean code organization, allowing me to deliver solutions that meet high user expectations. My goal is continuous growth and the pursuit of innovative solutions that streamline the development process and improve the quality of the projects I work on. I value clean application architecture and attention to visual details that enhance the user experience. I always strive to stay up-to-date with the latest trends in web technologies, learning new frameworks, tools, and methods. I believe that through constant skill development and teamwork, I am capable of tackling any challenge. Feel free to explore my projects and contact me for collaboration opportunities!</p>
+    <section class="px-4 mt-[80px] font-Montserrat">
+        <h1 class="text-[32px] sm:text-[44px] md:text-[52px] text-center font-bold text-blue">About</h1>
+        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:space-x-12 2xl:space-x-24 mt-12 2xl:mt-24">
+            <img :src="DeveloperActivity" class="w-[340px] sm:w-[400px] md:w-[440px] lg:w-[480px] xl:w-[520px] 2xl:w-[600px] mb-4" alt="work in progress">
+            <div class="max-w-[400px] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[650px] text-[15px] sm:text-[16px] md:text-[17px] mb-12">
+                <h3 class="font-bold text-[19px] sm:text-[24px] md:text-[28px]">Hi, i'm Malankiewicz</h3>
+                <p class="leading-[24px] sm:leading-[28px] md:leading-[32px]">and I am a web developer with a passion for creating functional, modern, and aesthetically pleasing websites and web applications. I have experience working with front-end technologies such as HTML5, CSS3, Tailwind, Bootstrap, JavaScript, Vue.js, as well as back-end technologies like PHP and Laravel, and databases such as MySQL and SQLite. In my daily work, I follow principles of responsiveness, performance, and clean code organization, allowing me to deliver solutions that meet high user expectations. My goal is continuous growth and the pursuit of innovative solutions that streamline the development process and improve the quality of the projects I work on. I value clean application architecture and attention to visual details that enhance the user experience. I always strive to stay up-to-date with the latest trends in web technologies, learning new frameworks, tools, and methods. I believe that through constant skill development and teamwork, I am capable of tackling any challenge. Feel free to explore my projects and contact me for collaboration opportunities!</p>
             </div>
         </div>
     </section>
