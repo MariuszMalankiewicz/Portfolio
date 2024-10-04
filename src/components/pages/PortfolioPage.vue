@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 import ImageCard from '/src/components/common/ImageCard.vue'
 import NavImageCardButton from '/src/components/common/NavImageCardButton.vue'
@@ -14,6 +14,27 @@ import RockScissorsAndPaper from '/src/assets/images/rock-scissors-paper.png'
 import TreeStructure from '/src/assets/images/tree-structure.png'
 import ToDoList2 from '/src/assets/images/todo-list-2.png'
 
+const filter = ref(null);
+
+const filterItems = (type) => {
+  filter.value = type;
+};
+
+const filteredItems = computed(() => {
+    if (!filter.value) {
+        return cards.value;
+      }
+      return cards.value.filter(item => item.type === filter.value);
+    });
+
+const activeButton = ref('buttonAll');
+
+const toggleActiveButton = (type) =>{
+  activeButton.value = activeButton.value === type ? type : type;
+}
+
+  //  isActive.value ? 'text-white bg-blue' : 'text-gray-600 bg-white'
+
 const cards = ref([
   {
     imageSrc: MMBlog,
@@ -22,6 +43,7 @@ const cards = ref([
     technology: "Laravel | PHP | MySQL | Tailwind | JavaScript",
     live: "#",
     github: "https://github.com/MariuszMalankiewicz/MMBlog",
+    type: 'fullstack',
   },
   {
     imageSrc: Portfolio,
@@ -30,6 +52,7 @@ const cards = ref([
     technology: "Vue | Tailwind",
     live: "https://mariuszmalankiewicz.netlify.app/",
     github: "https://github.com/MariuszMalankiewicz/Portfolio",
+    type: 'frontend',
   },
 
   {
@@ -39,6 +62,7 @@ const cards = ref([
     technology: "Laravel | Postman",
     live: "#",
     github: "https://github.com/MariuszMalankiewicz/task-managment-system",
+    type: 'backend'
   },
 
   {
@@ -48,6 +72,7 @@ const cards = ref([
     technology: "Vue | Tailwind",
     live: "https://cars-spott.netlify.app/",
     github: "https://github.com/MariuszMalankiewicz/cars-spot",
+    type: 'frontend'
   },
 
   {
@@ -57,6 +82,7 @@ const cards = ref([
     technology: "HTML5 | CSS3 | JavaScript",
     live: "https://mariuszmalankiewicz.github.io/Memory-Game/",
     github: "https://github.com/MariuszMalankiewicz/Memory-Game",
+    type: 'frontend'
   },
 
   {
@@ -66,6 +92,7 @@ const cards = ref([
     technology: "HTML5 | CSS3 | JavaScript",
     live: "https://mariuszmalankiewicz.github.io/To-Do-List/",
     github: "https://github.com/MariuszMalankiewicz/To-Do-List",
+    type: 'frontend'
   },
 
   {
@@ -75,6 +102,7 @@ const cards = ref([
     technology: "HTML5 | CSS3 | JavaScript",
     live: "https://mariuszmalankiewicz.github.io/Rock-scissors-paper/",
     github: "https://github.com/MariuszMalankiewicz/Rock-scissors-paper",
+    type: 'frontend'
   },
 
   {
@@ -84,6 +112,7 @@ const cards = ref([
     technology: "Laravel | Bootstrap | JavaScript",
     live: "#",
     github: "https://github.com/MariuszMalankiewicz/Tree-Structure",
+    type: 'fullstack'
   },
 
   {
@@ -93,6 +122,7 @@ const cards = ref([
     technology: "Vue3 | Tailwind",
     live: "https://vue-todo-list-mm.netlify.app/",
     github: "https://github.com/MariuszMalankiewicz/Vue3TodoList",
+    type: 'frontend'
   },
 
 ]);
@@ -102,13 +132,39 @@ const cards = ref([
   <section class="px-4 mt-[80px] font-Montserrat mb-12">
       <h1 class="text-[32px] sm:text-[44px] md:text-[52px] text-center font-bold text-blue">Portfolio</h1>
       <nav class="flex flex-wrap items-center justify-center gap-3 mt-12">
-        <NavImageCardButton class="text-white bg-blue">Show All</NavImageCardButton>
-        <NavImageCardButton class="cursor-no-drop line-through">Front-End</NavImageCardButton>
-        <NavImageCardButton class="cursor-no-drop line-through">Back-End</NavImageCardButton>
-        <NavImageCardButton class="cursor-no-drop line-through">Full-Stack</NavImageCardButton>
+        
+        <NavImageCardButton
+          @click="filterItems(null); toggleActiveButton('buttonAll');"
+          :class="[activeButton === 'buttonAll' ? 'text-white bg-blue' : 'text-gray-600 bg-white']"
+          class="transition-all duration-300 ease-in-out">
+          Show All
+        </NavImageCardButton>
+    
+        <NavImageCardButton 
+          @click="filterItems('frontend'); toggleActiveButton('buttonFrontend');"
+          :class="[activeButton === 'buttonFrontend' ? 'text-white bg-blue' : 'text-gray-600 bg-white']"
+          class="transition-all duration-300 ease-in-out">
+            Front-End
+        </NavImageCardButton>
+
+        <NavImageCardButton 
+          @click="filterItems('backend'); toggleActiveButton('buttonBackend');"
+          :class="[activeButton === 'buttonBackend' ? 'text-white bg-blue' : 'text-gray-600 bg-white']"
+          class="transition-all duration-300 ease-in-out">
+          Back-End
+        </NavImageCardButton>
+
+        <NavImageCardButton 
+          @click="filterItems('fullstack'); toggleActiveButton('buttonFullStack');"
+          :class="[activeButton === 'buttonFullStack' ? 'text-white bg-blue' : 'text-gray-600 bg-white']"
+          class="transition-all duration-300 ease-in-out">
+          Full-Stack
+        </NavImageCardButton>
+      
       </nav>
       <div class="mt-12 flex flex-wrap items-center justify-center gap-12">
-      <ImageCard v-for="(card, index) in cards" 
+      <ImageCard
+        v-for="(card, index) in filteredItems" 
         :key="index" 
         :imageSrc="card.imageSrc" 
         :title="card.title" 
